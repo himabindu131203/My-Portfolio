@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hima Bindu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 99;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(170, 107, 228);
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 0.5px;
+            margin: 40px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 150px;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .secondSection>p {
+            text-align: justify;
+            margin-left: 150px;
+            margin-top: -150px;
+            font-weight: 100px;
+            font-size: larger;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+            margin-bottom: 150px;
+        }
+
+        .rightSection img {
+            border-radius: 50%;
+            margin-left: 50px;
+            margin-top: -20px;
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+        .secondSection .pro2 {
+            display: inline-block;
+            padding: 8px 20px;
+            background-color: rgb(73, 73, 82);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 30px;
+            margin-bottom: 3px;
+            font-size: 1rem;
+            margin-left: 150px;
+
+        }
+        .secondSection .pro2:hover {
+            background-color: rgb(78, 78, 209);
+        }
+
+        .thirdSection {
+            max-width: 80vw;
+            height: 100vh;
+            margin: auto;
+            padding-top: 60px;
+        }
+
+        .thirdSection h1 {
+            font-size: 3rem;
+            text-align: center;
+            margin: 70px 0;
+        }
+
+        .thirdSection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 0px 0;
+            display: flex;
+        }
+
+        .thirdSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            color: white;
+            margin: 0 200px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 100px;
+            font-size: 2.5rem;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 150px;
+            color: rgb(255, 255, 255);
+            width: 100px;
+            font-size: 2rem;
+            margin-left: 10px;
+        }
+
+        .fourthSection {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            text-align: center;
+            background-color: rgb(0, 0, 33);
+            height: 85vh;
+            padding-top: 30px;
+
+        }
+
+        .fourthSection h1 {
+            margin-top: 100px;
+            font-size: 3rem;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .card {
+            width: 250px;
+            background-color: white;
+            border-radius: 50px;
+            overflow: hidden;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+            margin: 50px;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-content {
+            padding: 16px;
+        }
+
+        .card-content h3 {
+            font-size: 28px;
+            margin-bottom: 8px;
+            color: black;
+        }
+
+        .card-content .pro {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: rgb(214, 205, 205);
+            color: black;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 16px;
+        }
+
+        .pro:hover {
+            background-color: #9696ae;
+        }
+        .fifthSection {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            text-align: center;
+            background-color: rgb(0, 0, 33);
+            height: 85vh;
+            padding-top: 5px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+
+        .fifthSection h1 {
+            margin-top: 120px;
+            font-size: 3rem;
+        }
+
+        .card-container1 {
+            display: flex;
+            justify-content: center;
+            margin-top: 75px;
+            margin-left: 170px;
+            margin-right: 170px;
+            flex-wrap: wrap;
+            border-radius: 10px;
+            background-color: rgb(100, 100, 142);
+
+        }
+
+        .card1 {
+            width: 300px;
+            background-color: rgb(0, 0, 33);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 2px 4px white;
+            margin: 40px;
+
+        }
+
+        .card1 img {
+            width: 50%;
+            height: auto;
+            padding-top: 30px;
+            margin-right: 10px;
+        }
+
+        .card-content1 h3 {
+            font-size: 34px;
+            margin-bottom: 8px;
+            color: rgb(255, 255, 255);
+            padding: 16px;
+            text-align: center;
+        }
+
+        .pro1 {
+            display: inline-block;
+            padding: 8px 30px;
+            background-color: rgb(93, 93, 103);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 3px;
+            margin-bottom: 30px;
+
+        }
+
+        .pro1:hover {
+            background-color: rgb(52, 52, 97);
+        }
+        .pro2 {
+            display: inline-block;
+            padding: 8px 30px;
+            background-color: rgb(73, 73, 82);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 3px;
+            margin-bottom: 30px;
+            font-size: 2rem;
+            margin-left: 45px;
+
+        }
+
+        .pro2:hover {
+            background-color: rgb(78, 78, 209);
+        }
+        .sixthSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 150px;
+            height: 85vh;
+        }
+
+        .sixthSection>div {
+            width: 30%;
+        }
+
+        .sixthSection .leftSection {
+            font-size: 3rem;
+            margin-bottom: 150px;
+            margin-top: 130px;
+        }
+
+        .sixthSection .rightSection img {
+            border-radius: 10px;
+            margin-left: 60px;
+            margin-top: -20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <nav>
+            <div class="left">Hima Bindu</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#profiles">Profiles</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <section class="firstSection" id="#">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Talari Hima Bindu</span>
+                <div>and I am a </div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="bg.jpg" alt="" height="500" width=400">
+            </div>
+        </section>
+        <section class="secondSection">
+            <p>A passionate developer with a strong background in</br>computer science and mathematics. Always eager to
+                learn new</br>technologies and contribute to projects that make the world.</p>
+                <a href="https://drive.google.com/file/d/1J_RRZzsWA6omjr_P_qZbqa-TPlQ_Wgyc/view?usp=sharing" class="pro2" target="_blank"><u>Resume</u></a>
+        </section>
+        <hr>
+        <section class="thirdSection" id="skills">
+            <h1><u>Skills</u></h1>
+            <div class="box">
+                <div class="vertical">
+                    <div class="vertical-title">
+                        <u>Frontend</u>
+                    </div>
+                    <div class="vertical-desc">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                        <u>Languages</u>
+                    </div>
+                    <div class="vertical-desc">
+                        <ul>
+                            <li>Python</li>
+                            <li>C++</li>
+                            <li>C</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                        <u>Others</u>
+                    </div>
+                    <div class="vertical-desc">
+                        <ul>
+                            <li>DSA</li>
+                            <li>Git</li>
+                            <li>Github</li>
+                            <li>Unix</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fourthSection" id="profiles">
+            <h1><u>Profiles</u></h1>
+            <div class="card-container">
+                <div class="card">
+                    <img src="code.jpeg">
+                    <div class="card-content">
+                        <h3>CodeChef</h3>
+                        <a href="https://www.codechef.com/users/himabindu2003" class="pro" target="_blank"><u>View Profile</u></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="leet.png">
+                    <div class="card-content">
+                        <h3>LeetCode</h3>
+                        <a href="https://leetcode.com/u/talarihimabindu/" class="pro" target="_blank"><u>View Profile</u></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="github.png">
+                    <div class="card-content">
+                        <h3>GitHub</h3>
+                        <a href="https://github.com/himabindu131203" class="pro" target="_blank"><u>View Projects</u></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fifthSection" id="projects">
+            <h1><u>Projects</u></h1>
+            <div class="card-container1">
+                <div class="card1">
+                    <img src="bb.png">
+                    <div class="card-content1">
+                        <h3>Blood Bank</h3>
+                        <a href="https://github.com/himabindu131203/Blood-Bank-1" class="pro1" target="_blank"><u>View</u></a>
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="ce.jpg">
+                    <div class="card-content1">
+                        <h3>Code Editor</h3>
+                        <a href=" https://himabindu131203.github.io/Code-Editor/" class="pro1" target="_blank"><u>View</u></a>
+                    </div>
+                </div>
+                <div class="card1">
+                    <img src="port.jpg">
+                    <div class="card-content1">
+                        <h3>Portfolio</h3>
+                        <a href="https://himabindu131203.github.io/Portfolio/" class="pro1" target="_blank"><u>View</u></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sixthSection" id="contact">
+            <div class="rightSection">
+                <img src="contact.avif" class="cont" alt="" height="500" width=400">
+            </div>
+            <div class="leftSection">
+                <h3>Get in touch</h3>
+                <a href="mailto:talarihimabindu2003@gmail.com" class="pro2" target="_blank"><u>Contact now</u></a>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer'],
+            typeSpeed: 50,
+            autoStart: true,
+            loop: true,
+        });
+    </script>
+</body>
+
+</html>
